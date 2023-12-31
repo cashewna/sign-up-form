@@ -16,6 +16,8 @@
  * Typographic tweaks to improve text rendering
  */
 body {
+    display: flex;
+    height: 100vh;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
@@ -40,4 +42,23 @@ input, button, textarea, select {
  */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+}
+
+#background-img {
+    display: flex;
+    flex-flow: column;
+    width: 40vw;
+}
+
+#background-img > img {
+    object-fit: cover;
+    height: 100vh;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller system-ui;
+    padding: 3px;
+    text-align: center;
 }
