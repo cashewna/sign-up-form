@@ -57,7 +57,6 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
 figcaption {
     background-color: #222;
     color: #fff;
@@ -71,5 +70,12 @@ figcaption {
     
     a:visited {
         color: yellow;
+    }
+}
+
+.signup-form {
+    padding: 6rem;
+    h1 {
+        max-width: 40ch;
     }
 }
