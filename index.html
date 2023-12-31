@@ -1,25 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Sign Up</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <figure id="signup-bg">
-            <img src="./assets/coffee-pouring.jpg" alt="sign-up background" width="580">
-            <figcaption>
-                Photo by <a href="https://unsplash.com/@roseonajourney?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Melody Zimmerman</a> on <a href="https://unsplash.com/photos/a-person-pours-coffee-into-a-mug-l0pH-S4U_LA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-            </figcaption>
-        </figure>
-        <div class="signup-form">
-            <h1>This is not a real online service! You know you need something
-                like this in your life to help you realize your deepest dreams.
-                Sign up <em>now</em> to get started.
-                <br>
-                You <em>know</em> you want to.
-            </h1>
-        </div>
-    </body>
+
+<head>
+    <title>Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <figure id="signup-bg">
+        <img src="./assets/coffee-pouring.jpg" alt="sign-up background" width="580">
+        <figcaption>
+            Photo by <a
+                href="https://unsplash.com/@roseonajourney?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Melody
+                Zimmerman</a> on <a
+                href="https://unsplash.com/photos/a-person-pours-coffee-into-a-mug-l0pH-S4U_LA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </figcaption>
+    </figure>
+    <div class="signup-form">
+        <h1>This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.
+            <br>
+            You <em>know</em> you want to.
+        </h1>
+        <h2>Let's do this!</h2>
+        <form action="/" method="post" >
+            <div class="given_name">
+                <label for="given_name">First Name</label>
+                <input type="text" name="given_name" id="given_name" required>
+            </div>
+
+            <div class="last_name">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" required>
+            </div>
+
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="phone_number">
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{9,10}" required>
+            </div>
+
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+
 </html>
