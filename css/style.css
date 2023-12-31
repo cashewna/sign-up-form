@@ -44,16 +44,19 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-#background-img {
+#signup-bg {
+    --width: 40vw;
     display: flex;
     flex-flow: column;
-    width: 40vw;
+    width: var(--width);
+
+    img {
+        object-fit: cover;
+        width: var(--width);
+        height: 100vh;
+    }
 }
 
-#background-img > img {
-    object-fit: cover;
-    height: 100vh;
-}
 
 figcaption {
     background-color: #222;
