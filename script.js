@@ -7,3 +7,15 @@ phone_number.addEventListener("input", (_event) => {
         phone_number.setCustomValidity("");
     }
 });
+
+
+const password = document.getElementById('password');
+const confirmPassword = document.getElementById('confirmPassword');
+
+password.addEventListener("input", (_event) => {
+    if (password.value !== confirmPassword.value) {
+        confirmPassword.setCustomValidity("Passwords do not match");
+    } else {
+        confirmPassword.setCustomValidity("");
+    }
+});

@@ -4,6 +4,7 @@
     --color-secondary: #D0B49F;
     --color-secondary-light: #E4D4C8;
 }
+
 /*
  * Use a more-intuitive box-sizing model.
  */
@@ -76,30 +77,30 @@ h6 {
         width: var(--width);
         height: 100vh;
     }
-}
 
-figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller system-ui;
-    padding: 3px;
-    text-align: center;
+    figcaption {
+        background-color: transparent;
+        color: #fff;
+        font: italic smaller system-ui;
+        padding: 3px;
+        text-align: center;
+        margin-top: -1.5rem;
 
-    a:link {
-        color: green;
-    }
-
-    a:visited {
-        color: yellow;
+        a:link,
+        a:visited {
+            color: #fff;
+        }
     }
 }
+
+
 
 .right {
     width: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     .signup-header,
-    .signup-form > h2,
+    .signup-form>h2,
     .form-row,
     p {
         padding-left: 4rem;
@@ -112,10 +113,10 @@ figcaption {
     }
 
     h1 {
-        max-width: 60ch;
+        max-width: 45ch;
         font-weight: 500;
     }
-    
+
     h2 {
         padding-bottom: 1rem;
         font-size: 1.8rem;
@@ -130,33 +131,34 @@ figcaption {
         display: flex;
         flex-direction: column;
     }
-    
+
     .form-row {
         display: flex;
         margin-bottom: 1rem;
     }
-    
-    .form-left, .form-right {
+
+    .form-left,
+    .form-right {
         display: flex;
         flex-direction: column;
         width: 16rem;
     }
-    
+
     .form-right {
         margin-left: 6rem;
     }
-    
+
     input {
         border: 1px solid var(--color-secondary-light);
         border-radius: 4px;
     }
-    
+
     hr {
         margin-top: 2rem;
         margin-bottom: 2rem;
         border: 1px solid var(--color-primary);
     }
-    
+
     button {
         margin-left: 4rem;
         margin-bottom: 2rem;
@@ -167,14 +169,15 @@ figcaption {
         border-radius: 4px;
         padding: 1rem 4rem;
         font-size: 1.2rem;
-        
+
         &:hover {
             background-color: var(--color-secondary);
         }
     }
-    
+
     p {
         font-size: 1.2rem;
+
         a:link {
             color: var(--color-primary);
         }
