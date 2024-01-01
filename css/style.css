@@ -79,3 +79,8 @@ figcaption {
         max-width: 40ch;
     }
 }
+
+.signup-form, form {
+    display: flex;
+    flex-direction: column;
+}

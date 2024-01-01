@@ -27,34 +27,34 @@
             You <em>know</em> you want to.
         </h1>
         <h2>Let's do this!</h2>
-        <form action="/" method="post" >
-            <div class="given_name">
+        <form action="/" method="post">
+            <div class="form-row">
                 <label for="given_name">First Name</label>
                 <input type="text" name="given_name" id="given_name" required>
-            </div>
 
-            <div class="last_name">
                 <label for="last_name">Last Name</label>
-                <input type="text" name="last_name" id="last_name" required>
+                <input type="text" name="lastName" id="last_name" required>
             </div>
 
-            <div class="email">
+            <div class="form-row">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" required>
-            </div>
-            
-            <div class="phone_number">
+
                 <label for="phone_number">Phone Number</label>
-                <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{9,10}" required>
+                <input type="tel" name="phoneNumber" id="phone_number" pattern="[0-9]{9,10}" required>
             </div>
 
-            <div class="password">
+            <div class="form-row">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" required>
+                
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirm-password" required>
             </div>
-            <button type="submit">Sign Up</button>
+
+            <button type="submit">Create Account</button>
         </form>
+        <p>Already have an account? <a href="/">Log in</a>
     </div>
-</body>
 
 </html>
