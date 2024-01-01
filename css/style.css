@@ -181,5 +181,9 @@ h6 {
         a:link {
             color: var(--color-primary);
         }
+
+        a:visited {
+            color: var(--color-primary-light);
+        }
     }
 }
